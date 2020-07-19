@@ -1,0 +1,28 @@
+* {
+margin: 0;
+background-color:lightgray;
+}
+
+body {
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+}
+
+h1 {
+  display: inline;
+}
+
+.headercontainer {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  align-items: center;
+}
+
+.bell,
+.mypic {
+  width:30px;
+  height: 30px;
+}
