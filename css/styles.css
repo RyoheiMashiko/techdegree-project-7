@@ -1,6 +1,5 @@
 * {
 margin: 0;
-background-color:lightgray;
 }
 
 body {
@@ -8,21 +7,44 @@ body {
 }
 header {
   display: flex;
+  height:20%;
+  align-items: center;
+  background-color: darkgray;
+  color: white;
 }
 
 h1 {
   display: inline;
+  font-size: 30px;
+  padding:2% 2% 2% 2%;
 }
 
 .headercontainer {
   display: flex;
   position: absolute;
-  right: 10px;
+  right: 2%;
   align-items: center;
+  text-align: right;
 }
 
-.bell,
+.bell {
+  width:40px;
+  height: 40px;
+  border-right: 1px solid grey;
+  padding-right:15px;
+  margin: 2% 2%;
+}
+
 .mypic {
-  width:30px;
-  height: 30px;
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header p {
+  font-size: small;
+  width: 100px;
+  white-space: nowrap;
 }
