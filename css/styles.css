@@ -49,7 +49,7 @@ header p {
 
 body {
   box-sizing: border-box;
-  background-color: whitesmoke;
+  background-color: white;
 }
 
 .bell {
@@ -70,8 +70,10 @@ body {
 
 
 /* sidebar */
-.aside {
+aside {
   grid-area: aside;
+  background-color: lightgrey;
+  text-align: center;
 }
 
 .sidebaricon {
@@ -83,6 +85,34 @@ body {
  .icon-size {
   width: 60px;
   height: 60px;
+}
+
+.index {
+  font-size: 20px;
+}
+.index-wrap {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.input-wrap {
+  border: 1px solid grey;
+  width: 80%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: whitesmoke;
+}
+
+.searchbox {
+ margin-right: 10px;
+ height: 40px;
+ width: 400px;
+ border:solid 1px lightgrey;
+ border-radius: 5px;
 }
 
 /* main style */
