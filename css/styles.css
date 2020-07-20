@@ -2,6 +2,7 @@
 margin: 0;
 }
 
+
 header,
 aside,
 nav,
@@ -34,10 +35,10 @@ header h1 {
   padding:15px 15px 15px 15px;
 }
 
-.headercontainer {
+.header-container {
   display: flex;
   position: absolute;
-  right: 2%;
+  right: 1%;
   align-items: center;
 }
 
@@ -89,17 +90,21 @@ aside {
 
 .index {
   font-size: 20px;
+  width: 20%;
+  text-align: center;
 }
 .index-wrap {
   display: flex;
   align-items: center;
   height: 70px;
-  justify-content: space-between;
+  /* width: 100%; */
+ 
 }
 
 .input-wrap {
-  border: 1px solid grey;
-  width: 80%;
+  border-left: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
@@ -108,18 +113,68 @@ aside {
 }
 
 .searchbox {
- margin-right: 10px;
+ margin-right: 20px;
  height: 40px;
- width: 400px;
+ width: 50%;
  border:solid 1px lightgrey;
  border-radius: 5px;
 }
 
 /* main style */
 
+.traffic,
+.daily-traffic,
+.mobile-users,
+.social-stats,
+.new-members,
+.recent-activity,
+.message-users,
+.settings {
+  border: lightsalmon 1px solid;
+}
+
+
 main {
   grid-area: main;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 250px 1fr 1fr;
+  grid-template-areas: 
+  "traffic traffic"
+  "daily-traffic mobile-users"
+  "social-stats social-stats"
+  "new-members recent-activity"
+  "message-user settings";
 }
+.subject {
+  padding: 20px 20px 20px 20px;
+}
+
+.traffic {
+  grid-area: traffic;
+}
+
+.traffic-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.time-wrap {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: space-between;
+}
+
+/* social stats style */
+.social-stats {
+  grid-area: social-stats;
+}
+
+
 
 /* header {
   display: flex;
