@@ -73,18 +73,29 @@ main {
  right: 0;
 }
 
+.maincontainer {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.traffic {
+ width: 100%;
+ height: auto;
+}
+
 .indexwrap {
   display: flex;
   justify-content: flex-start;
   background-color: white;
+  align-items: center;
 }
 
 .index {
-  height:40px;
-  padding-top: 10px;
-  padding-left: 10px;
-  margin-right: 0;
-  font-size: 10px;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .inputwrap {
@@ -92,7 +103,7 @@ main {
   justify-content: flex-end;
   border: 1px solid lightgrey;
   background-color: whitesmoke;
-  height:60px;
+  height: 60px;
   width: 100%;
   align-items: center;
 }
@@ -102,6 +113,59 @@ main {
   border-radius: 5px;
   height: 40px;
   width: 400px;
-  position: absolute;
-  top: 2%;
+  margin-right:15px;
 }
+
+.trafficwrap {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+}
+
+.trafficwrap p {
+  padding: 10px 10px 10px 10px;
+}
+
+.timewrap {
+  display: flex;
+  position: absolute;
+  right: 2%;
+}
+
+.dailytraffic {
+  width: 50%;
+}
+
+.mobileusers {
+  width: 50%;
+}
+
+.socialstats {
+  width: 100%;
+}
+
+.twitter-icon {
+  width: 10%;
+  height: 10%;
+}
+
+
+
+.newmembers{
+  width: 50%;
+}
+
+.recentactivity {
+  width: 50%;
+}
+
+.messageuser {
+  width: 50%;
+}
+
+.settings {
+  width:50%;
+}
+
+
