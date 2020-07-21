@@ -5,6 +5,7 @@
     <meta name = "viewport" content ="width=device-width, initial-scale=1">
     <link rel="icon" href="images/title.jpg" >
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/toggle.css">
   </head>
   <body>
     <div class="grid">
@@ -195,8 +196,29 @@
                 </form>
           </div>
           <div class="settings">
-              <div>
                 <p class="subject">SETTINGS</p>
+                <div class="toggle-switch">
+                  <p>Send Email Notifications</p>
+                  <label class="switch-light switch-ios" onclick="">
+                    <input type="checkbox">
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label> 
+                </div>
+                <div class="toggle-switch">
+                  <p>Set Profile to public</p>
+                  <label class="switch-light switch-ios" onclick="">
+                    <input type="checkbox">
+                    <span>
+                      <span>Off</span>
+                      <span>On</span>
+                      <a></a>
+                    </span>
+                  </label> 
+                </div>
                 <select>
                   <option disabled selected></option>
                   <option></option>
@@ -206,7 +228,7 @@
                   <button>SAVE</button>
                   <button>CANCEL</button>
                 </div>
-              </div>
+              
             </div>
           </div>
       
