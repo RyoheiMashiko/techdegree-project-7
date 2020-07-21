@@ -157,16 +157,6 @@ aside {
 
 /* main style */
 
-.traffic,
-.daily-traffic,
-.mobile-users,
-.social-stats,
-.new-members,
-.recent-activity,
-.message-users,
-.settings {
-  border: lightsalmon 1px solid;
-}
 
 
 main {
@@ -175,7 +165,8 @@ main {
 }
 
 .subject {
-  padding: 20px 20px 20px 20px;
+  padding: 2% 2% 2% 2%;
+  font-weight: bolder;
 }
 
 /* traffic style */
@@ -184,14 +175,16 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  margin-right: 0.5rem;
 }
 
 .time-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 50%;
 }
+
 
 /* daily-traffic style */
 .daily-traffic {
@@ -206,6 +199,38 @@ main {
 /* social stats style */
 .social-stats {
   /* grid-area: social-stats; */
+}
+
+.social-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-container {
+  width: 80%;
+  border: tomato 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.icon-size {
+  width: 60px;
+  height: 60px;
+}
+
+.social-media {
+  position: relative;
+  top:10px;
+  font-size: 15px;
+}
+
+.social-number {
+  font-size: 40px;
+  padding-bottom: 10px;
 }
 
 /* .social-wrap {
@@ -451,4 +476,39 @@ main {
     "aside nav"
     "aside main";
   }
+
+  /* .main {
+    grid-template-columns: 50%;
+  } */
+  
+
+  .traffic,
+  .social-stats {
+    grid-column: 1 / span 2 ;
+  }
+
+  .daily-traffic,
+  .new-members,
+  .message-users {
+   grid-column: 1 / span 1 ;
+
+  }
+
+  .mobile-users,
+  .recent-activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
+  
+  .traffic,
+  .social-stats,
+  .daily-traffic,
+  .new-members,
+  .message-users, 
+  .mobile-users,
+  .recent-activity,
+  .settings  {
+    border: lightsalmon 2px solid;
+  }
+
 }
