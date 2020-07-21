@@ -104,17 +104,18 @@ aside {
   margin: 20px 30px 20px 30px;
 } */
 
-.index {
-  font-size: 0.7rem;
-  width: 30%;
-  text-align: center;
-  white-space: nowrap;
-}
 
 .index-wrap {
   display: flex;
   align-items: center;
   height: 40px;
+}
+
+.index {
+  font-size: 0.7rem;
+  width: 30%;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .input-wrap {
@@ -164,8 +165,20 @@ main {
   display: grid;
 }
 
+.traffic,
+.daily-traffic,
+.mobile-users,
+.social-users,
+.social-stats,
+.new-members,
+.recent-activity,
+.message-users,
+.settings {
+  border: violet solid 2px;
+}
+
 .subject {
-  padding: 2% 2% 2% 2%;
+  padding: 1rem 0.6rem 1rem 0.6rem;
   font-weight: bolder;
 }
 
@@ -206,6 +219,7 @@ main {
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  margin: 0 1rem 1rem 1rem ;
 }
 
 .social-container {
@@ -213,24 +227,27 @@ main {
   border: tomato 1px solid;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
   border-radius: 5px;
 }
 
 .icon-size {
-  width: 60px;
-  height: 60px;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem 0.5rem 0.5rem 2rem;
+}
+
+.social-text {
+ margin-left: 2rem;
 }
 
 .social-media {
   position: relative;
   top:10px;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .social-number {
-  font-size: 40px;
-  padding-bottom: 10px;
+  font-size: 2rem;
 }
 
 /* .social-wrap {
@@ -264,7 +281,20 @@ main {
 .recent-activity {
   /* grid-area: recent-activity; */
 }
+
+.member-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.member-info {
+ display: flex;
+}
+
 .member-icon {
+
   width:40px;
   height: 40px;
   border-radius: 50%;
@@ -273,8 +303,7 @@ main {
 .member-wrap {
   display: flex;
   flex-direction: column;
-  border: yellow 1px solid;
-  margin: 0px 20px 20px 20px ;
+  margin: 0 1rem 1rem 1rem ;
 }
 
 /* header {
