@@ -166,6 +166,7 @@ main {
   padding: 20px 20px 20px 20px;
 }
 
+/* traffic style */
 .traffic {
   grid-area: traffic;
 }
@@ -182,6 +183,16 @@ main {
   align-items: center;
   width: 40%;
   justify-content: space-between;
+}
+
+/* daily-traffic style */
+.daily-traffic {
+  grid-area: daily-traffic;
+}
+
+/* .mobile-users style */
+.mobile-users {
+  grid-area: mobile-users;
 }
 
 /* social stats style */
@@ -210,6 +221,15 @@ main {
 
 .social-number {
  font-size: 40px;
+}
+
+/* new members style */
+
+.new-members {
+  grid-area: new-members;
+}
+.recent-activity {
+  grid-area: recent-activity;
 }
 
 .member-icon {
