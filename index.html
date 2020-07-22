@@ -43,9 +43,7 @@
             <input class="searchbox" type="text" placeholder="Search">
           </div>
         </div> 
-        <div class="alert">
-          <strong>Alert </strong>This is an alert box.
-          <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div id="alert">
         </div>
       </nav>
       
@@ -62,20 +60,18 @@
           </div>
           <canvas id="traffic-chart"></canvas>
         </section>
-            
         <section class="daily-traffic">
           <div>
             <p class="subject">DAIRY TRAFFIC</p>
           </div>
           <canvas id="dairy-traffic"></canvas>
-        </div>
-        <div class="mobile-users">
+        </section>
+        <section class="mobile-users">
           <div>
             <p class="subject">MOBILE USERS</p>
           </div>
           <canvas id="mobile-users"></canvas>
         </section>
-
         <section class="social-stats">
           <p class="subject">SOCIAL STATS</p>
           <div class="social-wrap">
@@ -110,7 +106,6 @@
           </div>
         </section>
         <section class="new-members">
-          <div>
             <p class="subject">NEW MEMBERS</p>
             <div class="member-wrap">
                 <div class="member-container">
@@ -154,8 +149,7 @@
                   <p>20/07/23</p>
                 </div>
             </div>
-          </div>
-        </sectioin>
+        </section>
         <section class="recent-activity">
             <p class="subject">RECENT ACTIVITY</p>
             <div class="member-wrap">
@@ -200,7 +194,7 @@
                 </div>
                 <p>></p>
               </div>
-          </div>
+            </div>
         </section>
         <section class="message-user">
           <p class="subject">MESSAGE USER</p>
@@ -248,5 +242,6 @@
         </section>
       </main>
     </div>
+    <script src="js/script.js"></script>
   </body>
   </html>

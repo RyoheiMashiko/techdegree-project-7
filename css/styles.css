@@ -132,7 +132,7 @@ aside {
  font-size: 0.5rem;
 }
 
-.alert {
+#alert {
   background-color: darkgrey;
   color: white;
   font-size: 0.5rem;
