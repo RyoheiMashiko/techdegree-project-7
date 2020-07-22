@@ -172,7 +172,7 @@ main {
 .social-stats,
 .new-members,
 .recent-activity,
-.message-users,
+.message-user,
 .settings {
   border: violet solid 2px;
 }
@@ -293,6 +293,7 @@ main {
 
 .member-info {
  display: flex;
+ width: 90%;
 }
 
 .member-icon {
@@ -307,6 +308,87 @@ main {
   flex-direction: column;
   margin: 0 1rem 1rem 1rem ;
 }
+
+.member-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 70%;
+  line-height: 0.8rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem 1rem 1rem;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.message-input {
+  height:1rem;
+  border:solid 1px lightgrey;
+  border-radius: 3px;
+}
+
+.message-text {
+  height: 4rem;
+  border: none;
+  border:solid 1px lightgrey;
+  border-radius: 3px;
+}
+
+.message-button {
+  height:2rem;
+  background-color: gray;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.toggle-switch {
+  display: flex;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.switch-light {
+  width: 4.5rem;
+  height: 2rem;
+}
+
+.toggle-switch  p{
+  width: 60%;
+}
+
+.setting-select {
+  width: 90%;
+  text-align: center;
+  border:solid 1px lightgrey;
+  border-radius: 3px;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.setting-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.setting-button button {
+  height:2rem;
+  width: 40%;
+  background-color: gray;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+
+/* .member-text {
+  line-height: 0.8rem;
+} */
 
 /* header {
   display: flex;
