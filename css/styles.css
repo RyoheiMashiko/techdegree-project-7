@@ -14,13 +14,6 @@ p{
   font-size: 0.5rem;
 }
 
-header,
-aside,
-nav,
-main {
-  border: blue 1px solid;
-}
-
 .grid {
   display: grid;
   grid-template-columns: 100%;
@@ -174,7 +167,7 @@ main {
 .recent-activity,
 .message-user,
 .settings {
-  border: violet solid 2px;
+  border: lightgray solid 1px;
 }
 
 .subject {
@@ -220,14 +213,16 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 0 1rem 1rem 1rem ;
+  height: 20rem;
 }
 
 .social-container {
   width: 80%;
-  border: tomato 1px solid;
   display: flex;
   align-items: center;
   border-radius: 5px;
+  background-color: whitesomke;
+  border: lightgray 1px solid;
 }
 
 .icon-size {
@@ -323,7 +318,7 @@ form {
   flex-direction: column;
   margin: 0 1rem 1rem 1rem;
   justify-content: space-between;
-  height: 150px;
+  height: 10rem;
 }
 
 .message-input {
@@ -347,12 +342,19 @@ form {
   border-radius: 3px;
 }
 
+.settings:first-of-type {
+ margin-top: 10rem;
+}
+
 .toggle-switch {
   display: flex;
   margin-left: 1rem;
   align-items: center;
 }
 
+.switch2 {
+  margin-top: 1rem;
+}
 .switch-light {
   width: 4.5rem;
   height: 2rem;
@@ -360,6 +362,14 @@ form {
 
 .toggle-switch  p{
   width: 60%;
+}
+
+.setting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  margin-top: 1rem;
 }
 
 .setting-select {
@@ -372,214 +382,18 @@ form {
 
 .setting-button {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .setting-button button {
   height:2rem;
-  width: 40%;
+  width: 8rem;
   background-color: gray;
   border: none;
   color: white;
   border-radius: 3px;
-  margin-bottom: 1rem;
+  margin:0 1rem 1rem 1rem;
 }
-
-
-/* .member-text {
-  line-height: 0.8rem;
-} */
-
-/* header {
-  display: flex;
-  align-items: center;
-  background-color: darkgray;
-  color: white;
-  width: 100%;
-}
-
-header h1 {
-  font-size: 30px;
-  padding:15px 15px 15px 15px;
-}
-
-.headercontainer {
-  display: flex;
-  position: absolute;
-  right: 2%;
-  align-items: center;
-}
-
-.bell {
-  width:40px;
-  height: 40px;
-  border-right: 1px solid grey;
-  padding-right:15px;
-  margin: 2% 2%;
-}
-
-.mypic {
-  width:40px;
-  height: 40px;
-  border-radius: 50%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-header p {
-  font-size: small;
-  width: 100px;
-  white-space: nowrap;
-}
-
-.navcontainer {
-  background-color:lightgrey;
-  height: 100%;
-  width: 90px;
-  position: fixed;
-  z-index: 1;
-  text-align: center;
-  padding-top: 80px;
-}
-
-.navicon {
- width: 40px;
- height: 40px;
- padding: 20px 10px 20px 10px; 
-}
-
-main {
-}
-
-.maincontainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.traffic {
- width: 100%;
- height: auto;
-}
-
-.indexwrap {
-  display: flex;
-  justify-content: flex-start;
-  background-color: white;
-  align-items: center;
-}
-
-.index {
-  width: 200px;
-  font-size: 20px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.inputwrap {
-  display: flex;
-  justify-content: flex-end;
-  border: 1px solid lightgrey;
-  background-color: whitesmoke;
-  height: 60px;
-  width: 100%;
-  align-items: center;
-}
-
-.searchbox {
-  border: none;
-  border-radius: 5px;
-  height: 40px;
-  width: 400px;
-  margin-right:15px;
-}
-
-.trafficwrap {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  height: 60px;
-}
-
-.subject {
-  padding: 20px 20px 20px 20px;
-}
-
-.timewrap {
-  display: flex;
-  position: absolute;
-  right: 2%;
-}
-
-.dailytraffic {
-  width: 50%;
-}
-
-.mobileusers {
-  width: 50%;
-}
-
-/* social stats layout */
-/* 
-.social-stats {
-  width: 100%;
-  height: 200px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
- justify-content: center;
-}
-
-.social-wrap {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 40px;
-
-}
-
-.social-container {
-  width: 300px;
-  height: 100px;
-  border: tomato 1px solid;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-
-}
-
-.icon-size {
-  width: 60px;
-  height: 60px;
-}
-
-.social-media {
-  position: relative;
-  top:10px;
-  font-size: 15px;
-}
-
-.social-number {
-  font-size: 40px;
-  padding-bottom: 10px;
-}
-
-
-
-.newmembers{
-  width: 50%;
-}
-
-.recentactivity {
-  width: 50%;
-}
-
-.messageuser {
-  width: 50%;
-}
-
-.settings {
-  width:50%;
-} */
 
 @media(min-width: 768px) {
   .grid {
@@ -587,14 +401,15 @@ main {
     grid-template-areas: 
     "header header"
     "aside nav"
+    "aside main"
     "aside main";
   }
 
-  /* .main {
-    grid-template-columns: 50%;
-  } */
+  main {
+    display: grid;
+    grid-template-columns: 50% ;
+  }
   
-
   .traffic,
   .social-stats {
     grid-column: 1 / span 2 ;
@@ -612,7 +427,106 @@ main {
   .settings {
     grid-column: 2 / span 1;
   }
+
+  .sidebar-container {
+   flex-direction: column;
+  }
+
+  .sidebar-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .index {
+    font-size: 1rem;
+    width: 20%;
+  }
+
+  .input-wrap {
+    width: 80%;
+  }
+
+  .searchbox {
+    height: 1.5rem;
+  }
+
+  .time-wrap {
+    width: 25%;
+  }
+
+
+  .social-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    height: 6rem;
+  }
+
+  .social-container {
+    width: 30%;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+  }
+
+  .social-text {
+    margin-left: 1.5rem;
+  }
+
+  form {
+    height: 12rem;
+  }
+
+  .message-input {
+    height:1.5rem;
+  }
   
+  .message-text {
+    height: 6rem;
+    border: none;
+    border:solid 1px lightgrey;
+    border-radius: 3px;
+  }
+  
+  .message-button {
+    height:2rem;
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  
+  .toggle-switch  p{
+    width: 50%;
+  }
+  
+  .setting-container {
+   width: 100%;
+  }
+
+  .setting-select {
+    display: inline;
+    font-size: 1.5rem;
+    width: 26rem;
+  }
+  
+  .setting-button {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .setting-button button {
+    height:2rem;
+    width: 12rem;
+    background-color: gray;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+  }
+
   .traffic,
   .social-stats,
   .daily-traffic,
@@ -621,7 +535,7 @@ main {
   .mobile-users,
   .recent-activity,
   .settings  {
-    border: lightsalmon 2px solid;
+    border: lightgray 1px solid;
   }
 
 }
