@@ -10,9 +10,9 @@ let trafficData = {
   datasets: [{
     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
     2500],
-    backgroundColor: "rgb(255,175,0, .5)",
+    backgroundColor: "rgb(190,190,190, .5)",
     borderWidth: 1,
-    borderColor:"rgb(255,175,0)",
+    borderColor:"rgb(190,190,190, .9)",
   }]
   };
 
@@ -48,7 +48,7 @@ const dailyData = {
   datasets: [{
     label: '# of Hits',
     data: [75, 115, 175, 125, 225, 200, 100],
-    backgroundColor: '#7477BF',
+    backgroundColor: "rgb(190,190,190, .5)",
     borderWidth: 1
   }]
   };
@@ -81,25 +81,25 @@ const mobileData = {
       data: [2000, 550, 500],
       borderWidth: 0,
       backgroundColor: [
-      '#7477BF',
-      '#78CF82',
-      '#51B6C8'
+      "rgb(150,150,150, .8)",
+      "rgb(180,180,180, .8)",
+      "rgb(200,200,200, .8)"
       ]
     }]
   };
 
-  const mobileOptions = {
-    legend: {
-      position: 'right',
-      labels: {
+const mobileOptions = {
+  legend: {
+    position: 'right',
+    labels: {
       boxWidth: 20,
       fontStyle: 'bold'
-      }
     }
-    }
+  }
+}
 
-    let mobileChart = new Chart(mobileCanvas, {
-      type: 'doughnut',
-      data: mobileData,
-      options: mobileOptions
-      });
+let mobileChart = new Chart(mobileCanvas, {
+  type: 'doughnut',
+  data: mobileData,
+  options: mobileOptions
+});
