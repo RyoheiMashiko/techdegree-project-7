@@ -298,9 +298,11 @@ main {
 form {
   display: flex;
   flex-direction: column;
-  margin: 0 1rem 1rem 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
   justify-content: space-between;
   height: 10rem;
+  width: 90%;
 }
 
 .message-input {
@@ -314,6 +316,7 @@ form {
   border: none;
   border:solid 1px lightgrey;
   border-radius: 3px;
+  resize: none;
 }
 
 .message-button {
@@ -460,7 +463,6 @@ form {
   .time-wrap {
     width: 25%;
   }
-
 
   .social-wrap {
     display: flex;
