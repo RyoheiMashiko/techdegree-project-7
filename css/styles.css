@@ -245,31 +245,6 @@ main {
   font-size: 2rem;
 }
 
-/* .social-wrap {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.social-container {
-  display: flex;
-  align-items: center;
-  width: 30%;
-  height: 100px;
-  border: lightgray 1px solid;
-  background-color: whitesmoke;
-}
-
-.social-media {
- position: relative;
- top: 10px;
-}
-
-.social-number {
- font-size: 40px;
-} */
-
-/* new members style */
-
 .new-members {
   /* grid-area: new-members; */
 }
@@ -302,6 +277,10 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 1rem 1rem 1rem ;
+}
+
+.member-container:last-of-type {
+  border-bottom: none;
 }
 
 .member-text {
@@ -367,13 +346,16 @@ form {
 .setting-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 20rem;
+  width: 90%;
+  margin: auto;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .setting-select {
-  width: 90%;
+  width: 100%;
   text-align: center;
   border:solid 1px lightgrey;
   border-radius: 3px;
@@ -383,16 +365,16 @@ form {
 .setting-button {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .setting-button button {
   height:2rem;
-  width: 8rem;
+  width: 45%;
   background-color: gray;
   border: none;
   color: white;
   border-radius: 3px;
-  margin:0 1rem 1rem 1rem;
 }
 
 @media(min-width: 768px) {
@@ -409,6 +391,19 @@ form {
     display: grid;
     grid-template-columns: 50% ;
   }
+    
+    .traffic,
+  .daily-traffic,
+  .mobile-users,
+  .social-users,
+  .social-stats,
+  .new-members,
+  .recent-activity,
+  .message-user,
+  .settings {
+    border: lightgray solid 1px;
+  }
+
   
   .traffic,
   .social-stats {
@@ -471,7 +466,12 @@ form {
   }
 
   .social-text {
-    margin-left: 1.5rem;
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .icon-size {
+    margin: auto;
   }
 
   form {
@@ -495,47 +495,27 @@ form {
     border: none;
     color: white;
     border-radius: 3px;
-  }
-  
-  
-  .toggle-switch  p{
-    width: 50%;
-  }
-  
-  .setting-container {
-   width: 100%;
-  }
+  }  
 
   .setting-select {
     display: inline;
     font-size: 1.5rem;
-    width: 26rem;
+    width: 100%;
   }
   
   .setting-button {
     display: flex;
     justify-content: space-between;
+    width: 100%;
   }
   
   .setting-button button {
     height:2rem;
-    width: 12rem;
     background-color: gray;
     border: none;
     color: white;
     border-radius: 3px;
     margin-bottom: 1rem;
-  }
-
-  .traffic,
-  .social-stats,
-  .daily-traffic,
-  .new-members,
-  .message-users, 
-  .mobile-users,
-  .recent-activity,
-  .settings  {
-    border: lightgray 1px solid;
   }
 
 }
