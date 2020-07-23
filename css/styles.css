@@ -1,6 +1,7 @@
 * {
   margin: 0;
 }
+
 body {
   box-sizing: border-box;
   background-color: white;
@@ -12,6 +13,10 @@ h1 {
 
 p{
   font-size: 0.5rem;
+}
+
+canvas {
+display: inline-block;
 }
 
 .grid {
@@ -173,6 +178,12 @@ main {
 .subject {
   padding: 1rem 0.6rem 1rem 0.6rem;
   font-weight: bolder;
+  color: orange;
+}
+
+.widget-container-full,
+.widget-counainer-half {
+  width: 95vw;
 }
 
 /* traffic style */
@@ -422,6 +433,14 @@ form {
   .settings {
     grid-column: 2 / span 1;
   }
+
+  .widget-container-full{
+    width: 90vw;
+  }
+
+  .widget-counainer-half {
+    width: 45vw;
+}
 
   .sidebar-container {
    flex-direction: column;
