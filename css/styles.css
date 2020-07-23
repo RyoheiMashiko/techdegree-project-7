@@ -15,9 +15,7 @@ p{
   font-size: 0.5rem;
 }
 
-canvas {
-display: inline-block;
-}
+
 
 .grid {
   display: grid;
@@ -182,8 +180,11 @@ main {
 }
 
 .widget-container-full,
-.widget-counainer-half {
+.widget-container-half {
   width: 95vw;
+  margin: 1rem auto 1rem auto;
+  text-align: center;
+  background-color: yellow;
 }
 
 /* traffic style */
@@ -438,7 +439,7 @@ form {
     width: 90vw;
   }
 
-  .widget-counainer-half {
+  .widget-container-half {
     width: 45vw;
 }
 

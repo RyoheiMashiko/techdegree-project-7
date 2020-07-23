@@ -19,8 +19,8 @@ let trafficData = {
   let trafficOptions = {
     aspectRatio: 2.5,
     animation: {
-    duration: 1000,
-    easing:"linear"
+      duration: 1000,
+      easing:"linear"
     },
     scales: {
       yAxes: [{
@@ -39,53 +39,53 @@ let trafficChart = new Chart(trafficCanvas, {
   data: trafficData,
   options: trafficOptions
   });
-  trafficChart.render();
 
-  const dailyCanvas = document.getElementById("daily-chart");
 
-  // data for daily traffic bar chart
+const dailyCanvas = document.getElementById("daily-chart");
+
 const dailyData = {
   labels: ["S", "M", "T", "W", "T", "F", "S"],
   datasets: [{
-  label: '# of Hits',
-  data: [75, 115, 175, 125, 225, 200, 100],
-  backgroundColor: '#7477BF',
-  borderWidth: 1
+    label: '# of Hits',
+    data: [75, 115, 175, 125, 225, 200, 100],
+    backgroundColor: '#7477BF',
+    borderWidth: 1
   }]
   };
-  const dailyOptions = {
+
+const dailyOptions = {
   scales: {
-  yAxes: [{
-  ticks: {
-  beginAtZero:true
-  }
-  }]
+    yAxes: [{
+      ticks: {
+        beginAtZero:true
+      }
+    }]
   },
   legend : {
   display: false
   }
-  }
+}
 
-  let dailyChart = new Chart(dailyCanvas, {
-    type: 'bar',
-    data: dailyData,
-    options: dailyOptions
-    });
+let dailyChart = new Chart(dailyCanvas, {
+  type: 'bar',
+  data: dailyData,
+  options: dailyOptions
+});
 
 
 const mobileCanvas = document.getElementById("mobile-chart");
 const mobileData = {
-  labels: ["Desktop", "Tablet", "Phones"],
-  datasets: [{
-  label: '# of Users',
-  data: [2000, 550, 500],
-  borderWidth: 0,
-  backgroundColor: [
-  '#7477BF',
-  '#78CF82',
-  '#51B6C8'
-  ]
-  }]
+    labels: ["Desktop", "Tablet", "Phones"],
+    datasets: [{
+      label: '# of Users',
+      data: [2000, 550, 500],
+      borderWidth: 0,
+      backgroundColor: [
+      '#7477BF',
+      '#78CF82',
+      '#51B6C8'
+      ]
+    }]
   };
 
   const mobileOptions = {
