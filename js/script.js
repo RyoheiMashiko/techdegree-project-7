@@ -119,5 +119,4 @@ send.addEventListener('click', () => {
   } else {
     alert(`Message successfully sent to: ${user.value}`);
   }
-  console.log("click");
   });

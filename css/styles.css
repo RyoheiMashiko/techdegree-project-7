@@ -195,21 +195,6 @@ main {
 }
 
 
-/* daily-traffic style */
-.daily-traffic {
-  /* grid-area: daily-traffic; */
-}
-
-/* .mobile-users style */
-.mobile-users {
-  /* grid-area: mobile-users; */
-}
-
-/* social stats style */
-.social-stats {
-  /* grid-area: social-stats; */
-}
-
 .social-wrap {
   display: flex;
   justify-content: space-evenly;
@@ -228,10 +213,18 @@ main {
   border: lightgray 1px solid;
 }
 
+.icon {
+  fill: white;
+}
+
+
 .icon-size {
-  width: 2rem;
-  height: 2rem;
-  margin: 0.5rem 0.5rem 0.5rem 2rem;
+  background-color: orange;
+  border-radius: 50%;
+  fill: white;
+  width: 50px;
+  height: 50px;
+  /* margin: 0.5rem 0.5rem 0.5rem 2rem; */
 }
 
 .social-text {
@@ -472,7 +465,7 @@ form {
   }
 
   .social-container {
-    width: 30%;
+    width: 20%;
     background-color: whitesmoke;
     border: 1px solid lightgray;
   }
@@ -483,7 +476,9 @@ form {
   }
 
   .icon-size {
-    margin: auto;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 2rem;
   }
 
   form {
