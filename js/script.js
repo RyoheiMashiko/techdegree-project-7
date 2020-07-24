@@ -10,7 +10,7 @@ let trafficData = {
   datasets: [{
     data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
     2500],
-    backgroundColor: "rgb(255,165,0, .8)",
+    backgroundColor: "rgb(255,165,0, .6)",
     borderWidth: 1,
     borderColor:"rgb(255,165,0, .1)",
   }]
@@ -48,7 +48,7 @@ const dailyData = {
   datasets: [{
     label: '# of Hits',
     data: [75, 115, 175, 125, 225, 200, 100],
-    backgroundColor: "rgb(255,165,0, .8)",
+    backgroundColor: "rgb(255,165,0, .6)",
     borderWidth: 1
   }]
   };
@@ -61,6 +61,7 @@ const dailyOptions = {
       }
     }]
   },
+  cornerRadius:10,
   legend : {
   display: false
   }

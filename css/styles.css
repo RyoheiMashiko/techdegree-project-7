@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 
 
@@ -8,7 +7,7 @@ body {
   box-sizing: border-box;
   background-color: white;
   color: gray;
-  border-right: 1px solid red;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 h1 {
@@ -69,13 +68,22 @@ header p {
   font-weight: lighter;
 }
 
-
 .bell {
   width:2.5rem;
   height:2.5rem;
-  border-right: 1px solid grey;
   padding-right:0.5rem;
   margin: 2% 2%;
+  border-right: 1px solid white;
+}
+
+.notification {
+  background-color: red;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  left: 1.2rem;
+  top: 0.5rem;
 }
 
 .mypic {
@@ -84,6 +92,7 @@ header p {
   border-radius: 50%;
   margin-left: 3%;
   margin-right: 3%;
+  
 }
 
 
@@ -176,7 +185,7 @@ main {
 .recent-activity,
 .message-user,
 .settings {
-  border: lightgray solid 1px;
+  border-bottom: lightgray solid 1px;
 }
 
 .traffic {
@@ -192,8 +201,7 @@ main {
 .widget-container-full,
 .widget-container-half {
   width: 95vw;
-  margin: 1rem auto 1rem auto;
-  
+  margin: 0.5rem auto 1rem auto;
 }
 
 /* traffic style */
@@ -227,11 +235,11 @@ main {
 
 .social-wrap {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin: 0 1rem 1rem 1rem ;
-  height: 20rem;
+  margin: 0 1rem 1.5rem 1rem ;
+  height: 16rem;
 }
 
 .social-container {
@@ -257,6 +265,7 @@ main {
   position: relative;
   top:5px;
   font-size: 0.8rem;
+  color: orange;
 }
 
 .social-number {
@@ -309,6 +318,20 @@ main {
   width: 70%;
   line-height: 0.8rem;
 }
+
+.member-text2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.member-text a {
+ color: navy;
+ font-size: 0.7rem;
+}
+
+.member-text a:visited {
+ color: rgb(158, 63, 142);
+}
+
 
 form {
   display: flex;
