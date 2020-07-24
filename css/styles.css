@@ -2,6 +2,13 @@
   margin: 0;
 }
 
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
 
 body {
   box-sizing: border-box;
