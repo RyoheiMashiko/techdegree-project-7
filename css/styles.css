@@ -1,11 +1,14 @@
 * {
   margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
 }
+
 
 body {
   box-sizing: border-box;
   background-color: white;
   color: gray;
+  border-right: 1px solid red;
 }
 
 h1 {
@@ -39,6 +42,16 @@ header {
 
 header h1 {
 margin: 2% 2% 2% 2%;
+font-weight: bolder;
+}
+
+.title-app {
+  font-weight: 1;
+}
+
+.title-tm {
+  font-size: 0.1rem;
+
 }
 
 .header-container {
@@ -53,6 +66,7 @@ header p {
   text-align: center;
   white-space: nowrap;
   margin: 2% 2% 2% 2%;
+  font-weight: lighter;
 }
 
 
@@ -112,7 +126,7 @@ aside {
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-radius: 0 0 0 5px;
-  width: 70%;
+  width: 75%;
   height: 40px;
   display: flex;
   align-items: center;
@@ -130,7 +144,7 @@ aside {
 }
 
 #alert {
-  background-color: darkgrey;
+  background-color: #4285F4;
   color: white;
   font-size: 0.5rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem ;
@@ -165,8 +179,12 @@ main {
   border: lightgray solid 1px;
 }
 
+.traffic {
+  border-top: none;
+}
+
 .subject {
-  padding: 1rem 0.6rem 1rem 0.6rem;
+  padding: 0.8rem 0.4rem 0.8rem 0.4rem;
   font-weight: bolder;
   color: orange;
 }
@@ -205,18 +223,14 @@ main {
 }
 
 .social-container {
-  width: 80%;
+  width: 70%;
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background-color: whitesomke;
-  border: lightgray 1px solid;
-}
+  background-color: white;
+  border: darkgray 1px solid;
 
-.icon {
-  fill: white;
 }
-
 
 .icon-size {
   background-color: orange;
@@ -224,21 +238,17 @@ main {
   fill: white;
   width: 50px;
   height: 50px;
-  /* margin: 0.5rem 0.5rem 0.5rem 2rem; */
-}
-
-.social-text {
- margin-left: 2rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .social-media {
   position: relative;
-  top:10px;
-  font-size: 1rem;
+  top:5px;
+  font-size: 0.8rem;
 }
 
 .social-number {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .new-members {
@@ -314,7 +324,7 @@ form {
 
 .message-button {
   height:2rem;
-  background-color: gray;
+  background-color: #4285F4;
   border: none;
   color: white;
   border-radius: 3px;
@@ -339,7 +349,7 @@ form {
 }
 
 .toggle-switch  p{
-  width: 60%;
+  width: 40%;
 }
 
 .setting-container {
@@ -370,7 +380,7 @@ form {
 .setting-button button {
   height:2rem;
   width: 45%;
-  background-color: gray;
+  background-color:#4285F4;
   border: none;
   color: white;
   border-radius: 3px;
@@ -442,7 +452,7 @@ form {
   }
 
   .index {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .input-wrap {
@@ -465,20 +475,18 @@ form {
   }
 
   .social-container {
-    width: 20%;
-    background-color: whitesmoke;
-    border: 1px solid lightgray;
+    width: 30%;
+    height: 5rem;
+
   }
 
-  .social-text {
+  .social-media {
     margin-left: 0;
-    margin-right: 1rem;
+    font-size: 0.9rem;
   }
 
-  .icon-size {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem 0.5rem 0.5rem 2rem;
+  .social-number {
+    font-size: 1.8rem;
   }
 
   form {
@@ -523,6 +531,35 @@ form {
     color: white;
     border-radius: 3px;
     margin-bottom: 1rem;
+  }
+}
+
+@media(min-width:1024px) {
+  .index {
+    font-size: 1.2rem;
+  }
+  
+  .social-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    height: 6rem;
+  }
+
+  .social-container {
+    width: 30%;
+    height: 6.5rem;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+  }
+
+  .social-media {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .social-number {
+    font-size: 2.8rem;
   }
 
 }
