@@ -56,7 +56,7 @@
             <p class="subject">TRAFFIC</p>
             <div class="time-wrap">
               <p>Hourly</p>
-              <p>Dayly</p>
+              <p>Daily</p>
               <p>Weekly</p>
               <p>Monthly</p>
             </div>
@@ -208,7 +208,14 @@
         <section class="message-user">
           <p class="subject">MESSAGE USER</p>
           <form>
-            <input class="message-input" id="userField" type="text" placeholder="Search for user">
+            <input class="message-input" id="userField" type="text" placeholder="Search for user" autocomplete="on" list="names">
+            <datalist id="names">
+              <option>Victoria Chambers</option>
+              <option>Dale Byrd</option>
+              <option>Dawn Wood</option>
+              <option>Dan Oliver</option>
+            </datalist>
+
             <textarea class="message-text" id="messageField" placeholder="Message for user"></textarea>
             <button class="message-button" id="send">SEND</button>
           </form>

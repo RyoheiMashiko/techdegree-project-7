@@ -4,17 +4,54 @@ alertBannar.innerHTML =
 <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>`;
 
 const trafficCanvas = document.getElementById("traffic-chart");
-let trafficData = {
+let trafficData1 = {
   labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
   "4-10", "11-17", "18-24", "25-31"],
   datasets: [{
-    data: [750, 1250, 1000, 2000, 1500, 1750, 1250, 1850, 2250, 1500,
-    2500],
+    data: [7, 12, 10, 20, 15, 17, 12, 18, 22, 15,
+    25],
     backgroundColor: "rgb(255,165,0, .6)",
     borderWidth: 1,
     borderColor:"rgb(255,165,0, .1)",
   }]
   };
+
+let trafficData2 = {
+  labels: ["1-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+  "4-10", "11-17", "18-24", "25-31"],
+  datasets: [{
+    data: [130, 158, 240, 480, 390,470, 430, 320, 400, 400,
+    600],
+    backgroundColor: "rgb(255,165,0, .6)",
+    borderWidth: 1,
+    borderColor:"rgb(255,165,0, .1)",
+  }]
+  };  
+
+  let trafficData3 = {
+    labels: ["1-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+    "4-10", "11-17", "18-24", "25-31"],
+    datasets: [{
+      data: [700, 750, 700, 1200, 1300, 1750, 950, 1350, 950, 1500,
+      1300],
+      backgroundColor: "rgb(255,165,0, .6)",
+      borderWidth: 1,
+      borderColor:"rgb(255,165,0, .1)",
+    }]
+  };  
+  
+  let trafficData4 = {
+    labels: ["1-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
+    "4-10", "11-17", "18-24", "25-31"],
+    datasets: [{
+      data: [3500, 4400, 2500, 5000, 4800, 6100, 3500, 5000, 4200, 6500,
+      5200],
+      backgroundColor: "rgb(255,165,0, .6)",
+      borderWidth: 1,
+      borderColor:"rgb(255,165,0, .1)",
+    }]
+  };  
+
 
   let trafficOptions = {
     aspectRatio: 2.5,
@@ -36,10 +73,40 @@ let trafficData = {
 
 let trafficChart = new Chart(trafficCanvas, {
   type: 'line',
-  data: trafficData,
+  data: trafficData1,
   options: trafficOptions
   });
 
+let test = document.getElementsByClassName("time-wrap")[0];
+console.log(test);
+test.addEventListener("click", (e) => {
+ let test2 = e.target.innerHTML;
+  if ( test2 === "Hourly") {
+    let trafficChart = new Chart(trafficCanvas, {
+      type: 'line',
+      data: trafficData1,
+      options: trafficOptions
+      });
+  } else if (test2 === "Daily") {
+    let trafficChart = new Chart(trafficCanvas, {
+      type: 'line',
+      data: trafficData2,
+      options: trafficOptions
+      });
+  } else if (test2 === "Weekly") {
+    let trafficChart = new Chart(trafficCanvas, {
+      type: 'line',
+      data: trafficData3,
+      options: trafficOptions
+      });
+  } else if (test2 === "Monthly") {
+    let trafficChart = new Chart(trafficCanvas, {
+      type: 'line',
+      data: trafficData4,
+      options: trafficOptions
+      });
+ }
+})
 
 const dailyCanvas = document.getElementById("daily-chart");
 
@@ -121,3 +188,24 @@ send.addEventListener('click', () => {
     alert(`Message successfully sent to: ${user.value}`);
   }
   });
+
+  //   creating datalist element
+  //   additon member name to the list 
+  //   get inputed value from input tag 
+  //   checking the value include member name 
+  //   if it is not included member name, delete from the screen 
+   
+
+  //Serch bar function of message user
+  let namesList = document.getElementById("names").getElementsByTagName("option");
+  console.log(namesList[0].innerHTML.toLowerCase());
+
+  user.addEventListener("keyup", (e)=> {
+    let userString = e.target.value;
+    userString.toLowerCase();
+    for (i = 0; i < namesList.length; i ++) {
+      if ( userString.includes(namesList[i].innerHTML.toLowerCase() === false)) {
+        namesList[i].style.display = "";
+      }
+    }
+  })
