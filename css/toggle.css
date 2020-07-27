@@ -35,7 +35,7 @@
     /* simulate default browser focus outlines on the switch,
    * when the inputs are focused.
    */ }
-   
+
     .switch-light::after {
       clear: both;
       content: '';
@@ -44,26 +44,8 @@
     .switch-light *:before,
     .switch-light *:after {
       box-sizing: border-box; }
-    .switch-light a {
-      display: block;
-      transition: all 0.2s ease-out; }
-    .switch-light label,
-    .switch-light > span {
-      /* breathing room for bootstrap/foundation classes.
-     */
-      line-height: 2em; }
-    .switch-light input:focus ~ span a,
-    .switch-light input:focus + label {
-      outline-width: 2px;
-      outline-style: solid;
-      outline-color: Highlight;
-      /* Chrome/Opera gets its native focus styles.
-     */ } }
-    @media only screen and (-webkit-min-device-pixel-ratio: 0) {
-      .switch-light input:focus ~ span a,
-      .switch-light input:focus + label {
-        outline-color: -webkit-focus-ring-color;
-        outline-style: auto; } }
+  
+
 
 @media only screen {
   /* don't hide the input from screen-readers and keyboard access
@@ -72,22 +54,10 @@
     position: absolute;
     opacity: 0;
     z-index: 3; }
-  .switch-light input:checked ~ span a {
-    right: 0%; }
+ 
   /* inherit from label
  */
-  .switch-light strong {
-    font-weight: inherit; }
-  .switch-light > span {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    min-height: 2em;
-    /* overwrite 3rd party classes padding
-   * eg. bootstrap .alert
-   */
-    padding: 0;
-    text-align: left; }
+
   .switch-light span span {
     position: relative;
     z-index: 2;
@@ -222,6 +192,3 @@
     a {
       border: none;
     }
-  /* Holo Theme
- */
-  

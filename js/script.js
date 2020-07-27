@@ -10,7 +10,6 @@ popUp.addEventListener("click", () => {
 })
 
 
-
 const alertBannar = document.getElementById("alert");
 alertBannar.innerHTML =
 `<strong>Alert </strong>This is an alert box.
@@ -221,3 +220,7 @@ send.addEventListener('click', () => {
       }
     }
   })
+
+
+// Adding selected attribute 
+//Get value or number has informatino of option
