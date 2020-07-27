@@ -83,6 +83,26 @@ header p {
   border-right: 1px solid white;
 }
 
+.pop {
+  display: none;
+  max-width: 120px;
+  font-size: 0.5rem;
+  background-color: navy;
+  color: white;
+  position: absolute;  
+  top: 1rem;
+  left: 0.5rem;
+  padding:0.5rem 0.5rem 0.5rem 0.5rem;
+  list-style: none;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.pop li {
+  border-bottom: white solid 1px;
+}
+
+
 .notification {
   background-color: red;
   width: 0.5rem;

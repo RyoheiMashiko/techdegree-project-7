@@ -1,3 +1,7 @@
+const popUp = document.getElementsByClassName("bell");
+console.log(popUp);
+
+
 const alertBannar = document.getElementById("alert");
 alertBannar.innerHTML =
 `<strong>Alert </strong>This is an alert box.
@@ -77,29 +81,28 @@ let trafficChart = new Chart(trafficCanvas, {
   options: trafficOptions
   });
 
-let test = document.getElementsByClassName("time-wrap")[0];
-console.log(test);
-test.addEventListener("click", (e) => {
- let test2 = e.target.innerHTML;
-  if ( test2 === "Hourly") {
+let trafficTerm = document.getElementsByClassName("time-wrap")[0];
+trafficTerm.addEventListener("click", (e) => {
+ let selectedTerm = e.target.innerHTML;
+  if ( selectedTerm === "Hourly") {
     let trafficChart = new Chart(trafficCanvas, {
       type: 'line',
       data: trafficData1,
       options: trafficOptions
       });
-  } else if (test2 === "Daily") {
+  } else if (selectedTerm === "Daily") {
     let trafficChart = new Chart(trafficCanvas, {
       type: 'line',
       data: trafficData2,
       options: trafficOptions
       });
-  } else if (test2 === "Weekly") {
+  } else if (selectedTerm === "Weekly") {
     let trafficChart = new Chart(trafficCanvas, {
       type: 'line',
       data: trafficData3,
       options: trafficOptions
       });
-  } else if (test2 === "Monthly") {
+  } else if (selectedTerm === "Monthly") {
     let trafficChart = new Chart(trafficCanvas, {
       type: 'line',
       data: trafficData4,
@@ -198,7 +201,7 @@ send.addEventListener('click', () => {
 
   //Serch bar function of message user
   let namesList = document.getElementById("names").getElementsByTagName("option");
-  console.log(namesList[0].innerHTML.toLowerCase());
+  // console.log(namesList[0].innerHTML.toLowerCase());
 
   user.addEventListener("keyup", (e)=> {
     let userString = e.target.value;
