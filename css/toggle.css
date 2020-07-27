@@ -35,6 +35,7 @@
     /* simulate default browser focus outlines on the switch,
    * when the inputs are focused.
    */ }
+   
     .switch-light::after {
       clear: both;
       content: '';

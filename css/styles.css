@@ -83,7 +83,7 @@ header p {
   border-right: 1px solid white;
 }
 
-.pop {
+#pop {
   display: none;
   max-width: 120px;
   font-size: 0.5rem;
@@ -91,14 +91,14 @@ header p {
   color: white;
   position: absolute;  
   top: 1rem;
-  left: 0.5rem;
+  left: 1.5rem;
   padding:0.5rem 0.5rem 0.5rem 0.5rem;
   list-style: none;
   text-align: left;
   border-radius: 5px;
 }
 
-.pop li {
+#pop li {
   border-bottom: white solid 1px;
 }
 
@@ -437,6 +437,11 @@ input::-webkit-calendar-picker-indicator {
   border:solid 1px lightgrey;
   border-radius: 3px;
   margin: 1rem 1rem 1rem 1rem;
+}
+
+select{
+ -webkit-appearance: none;
+ color: gray;
 }
 
 .setting-button {
