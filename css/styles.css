@@ -442,6 +442,11 @@ input::-webkit-calendar-picker-indicator {
 select{
  -webkit-appearance: none;
  color: gray;
+ /* font-size: 0.5rem; */
+}
+
+optgroup{
+  font-size: 1px;
 }
 
 .setting-button {
@@ -599,7 +604,7 @@ select{
 
   .setting-select {
     display: inline;
-    font-size: 1.5rem;
+    height: 1.5rem;
     width: 100%;
   }
   
