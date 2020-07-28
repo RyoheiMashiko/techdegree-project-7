@@ -221,6 +221,15 @@ send.addEventListener('click', () => {
     }
   })
 
+let test = document.getElementsByClassName("switch1")[0].getElementsByTagName("input")[0];
+console.log(test);
+test.setAttribute("checked", "false");
+test.removeAttribute("checked");
+
+let test2 = document.getElementsByTagName("optgroup")[0].getElementsByTagName("option");
+console.log(test2);
+let test3 = test2[1].innerText;
+console.log(test3);
 
 // Adding selected attribute 
 //Get value or number has informatino of option
