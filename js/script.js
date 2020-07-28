@@ -287,4 +287,5 @@ cancel.addEventListener("click", () => {
     switch1Input.setAttribute("checked", "false");
   }
 
-  
+  let selectedOption = document.querySelector("option[value=option]");
+  console.log(selectedOption);
