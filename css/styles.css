@@ -85,14 +85,52 @@ header p {
   padding-right:0.5rem;
   margin: 2% 2%;
   border-right: 1px solid white;
-  transition: fill 0.5s ease-in-out;
+  transition: fill 0.3s ease-in-out;
   fill: white;
 }
 
-.bell:hover {
+ .bell:hover {
   cursor: pointer;
-  fill:  orangered;
+  fill:  orange;
 }
+
+/*
+@keyframes bellshake{
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-5deg);
+  }
+  20% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-4deg);
+  }
+  40% {
+    transform: rotate(4deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(3deg);
+  }
+  70% {
+    transform: rotate(-2deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(-1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+  }
+ */
 
 #pop {
   display: none;
