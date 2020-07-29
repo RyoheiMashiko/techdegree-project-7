@@ -21,8 +21,8 @@ h1 {
   font-size: 1rem;
 }
 
-p{
-  font-size: 0.5rem;
+p {
+  font-size: 0.3rem;
 }
 
 .grid {
@@ -47,7 +47,7 @@ header {
 }
 
 header h1 {
-margin: 2% 2% 2% 2%;
+margin: 1.5% 1.5% 1.5% 1.5%;
 font-weight: bolder;
 }
 
@@ -72,12 +72,11 @@ header p {
   text-align: center;
   white-space: nowrap;
   margin: 2% 2% 2% 2%;
-  font-weight: lighter;
 }
 
 .bell {
   width:2.5rem;
-  height:2rem;
+  height:1.8rem;
   padding-right:0.5rem;
   margin: 2% 2%;
   border-right: 1px solid white;
@@ -86,7 +85,6 @@ header p {
 #pop {
   display: none;
   max-width: 120px;
-  font-size: 0.5rem;
   background-color: navy;
   color: white;
   position: absolute;  
@@ -119,9 +117,7 @@ header p {
   border-radius: 50%;
   margin-left: 3%;
   margin-right: 3%;
-  
 }
-
 
 /* sidebar */
 aside {
@@ -162,7 +158,7 @@ aside {
   border-left: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   border-radius: 0 0 0 5px;
-  width: 75%;
+  width: 77%;
   height: 1.9rem;
   display: flex;
   align-items: center;
@@ -182,12 +178,12 @@ aside {
 #alert {
   background-color: navy;
   color: white;
-  font-size: 0.5rem;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem ;
   height: 30px;
   line-height: 30px;
   padding-left: 10px;
   border-radius: 3px;
+  font-size: 0.3rem;
 }
 
 .close-btn {
@@ -346,9 +342,15 @@ main {
   line-height: 0.8rem;
 }
 
-.member-text2 {
+.member-text2 p:first-of-type {
   font-family: 'Open Sans', sans-serif;
 }
+
+.member-text2 p:last-of-type {
+  font-size: 0.5rem;
+}
+
+.member-text2
 
 .member-text a {
  color: navy;
@@ -380,8 +382,6 @@ input::-webkit-calendar-picker-indicator {
 	display: none;
 }
 
-
-
 .message-text {
   height: 4rem;
   border: none;
@@ -404,20 +404,23 @@ input::-webkit-calendar-picker-indicator {
 
 .toggle-switch {
   display: flex;
-  margin-left: 1rem;
+  margin: auto;
   align-items: center;
+  width: 90%;
 }
 
 .switch2 {
   margin-top: 1rem;
 }
+
 .switch-light {
   width: 4.5rem;
   height: 2rem;
 }
 
 .toggle-switch  p{
-  width: 40%;
+  width: 50%;
+  padding-right: 1rem;
 }
 
 .setting-container {
@@ -437,6 +440,7 @@ input::-webkit-calendar-picker-indicator {
   border:solid 1px lightgrey;
   border-radius: 3px;
   margin: 1rem 1rem 1rem 1rem;
+  padding-left: 0.5rem;
 }
 
 select{
@@ -445,8 +449,8 @@ select{
  /* font-size: 0.5rem; */
 }
 
-optgroup{
-  font-size: 1px;
+option{
+ padding-left: 1rem;
 }
 
 .setting-button {
@@ -465,6 +469,14 @@ optgroup{
 }
 
 @media(min-width: 768px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+
   .grid {
     grid-template-columns: 55px 1fr;
     grid-template-areas: 
@@ -479,7 +491,7 @@ optgroup{
     grid-template-columns: 50% ;
   }
     
-    .traffic,
+  .traffic,
   .daily-traffic,
   .mobile-users,
   .social-users,
@@ -546,6 +558,7 @@ optgroup{
 
   .searchbox {
     height: 1.5rem;
+    font-size: 0.7rem;
   }
 
   .time-wrap {
@@ -560,18 +573,29 @@ optgroup{
   }
 
   .social-container {
-    width: 30%;
-    height: 5rem;
+    width: 250px;
+    height: 6rem;
+  }
 
+  .icon-size {
+    width: 70px;
+    height: 70px;
+    margin: 0.5rem 1rem 0.5rem 1rem;
   }
 
   .social-media {
     margin-left: 0;
     font-size: 0.9rem;
+    top:7px;
+    }
   }
 
   .social-number {
     font-size: 1.8rem;
+  }
+
+  .member-text2 p:last-of-type {
+    font-size: 0.7rem;
   }
 
   form {
@@ -599,7 +623,7 @@ optgroup{
   .setting-container {
     display: flex;
     justify-content: space-between;
-    height: 9rem;
+    height: 8rem;
   }
 
   .setting-select {
@@ -621,22 +645,63 @@ optgroup{
     border-radius: 3px;
     margin-bottom: 1rem;
   }
-}
 
 @media(min-width:1024px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .header-title {
+   font-size: 1.5rem;
+  }
+
   .index {
     font-size: 1.2rem;
+  }
+
+  .bell {
+    width: 3.3rem;
+    height: 2.9rem;
+}
+
+  .notification {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  #pop {
+    max-width: 120px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+
+  .input-wrap {
+    width: 88%;
+    height: 2.8rem;
+  }
+
+  .searchbox {
+    font-size: 0.8rem;
+  }
+
+  #alert {
+    font-size: 0.7rem;
   }
   
   .social-wrap {
     display: flex;
     flex-direction: row;
     margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     height: 8rem;
   }
 
   .social-container {
-    width: 30%;
+    width: 260px;
     height: 6.5rem;
     background-color: whitesmoke;
     border: 1px solid lightgray;
