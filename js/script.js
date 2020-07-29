@@ -260,6 +260,7 @@ let options = select.getElementsByTagName("option");
 
 select.addEventListener("change", (e) => {
   optionsValue = e.target.value;
+  console.log("didit");
 })
 
 
@@ -296,7 +297,7 @@ if ( onOff2 %2 !== 0) {
 
 for (let i = 1; i < options.length; i++) {
   if (options[i].value === option) {
-    options[i].setAttribute("selected", "selected");
+    options[i].setAttribute("selected", true);
   }else {
     options[i].removeAttribute("selected");
   }
