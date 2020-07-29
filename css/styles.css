@@ -431,6 +431,7 @@ form {
 }
 
 .message-input {
+  -webkit-appearance:none;
   height:1rem;
   border:solid 1px lightgrey;
   border-radius: 3px;
@@ -441,6 +442,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .message-text {
+  -webkit-appearance:none;
   height: 4rem;
   border: none;
   border:solid 1px lightgrey;
