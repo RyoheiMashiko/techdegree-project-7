@@ -222,6 +222,7 @@ aside {
 }
 
 .searchbox {
+  -webkit-appearance:none;
   margin-right: 0.5rem;
   height: 1rem;
   width: 60%;
