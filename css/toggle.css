@@ -145,7 +145,7 @@
     height: 2em;
     background-color: #D8D9DB;
     border-radius: 1.75em;
-    transition: all .4s ease-out; }
+    transition: all .1s ease-out; }
   .switch-ios.switch-light > span span {
     position: absolute;
     top: 0;
@@ -180,7 +180,7 @@
       background-color: orange;
       border: 0.125em solid #D8D9DB;
       border-radius: 1.75em;
-      transition: all 0.12s ease-out; }
+      transition: all 10s ease-out; }
     .switch-ios.switch-toggle label {
       height: 2.4em;
       color: #888b92;
