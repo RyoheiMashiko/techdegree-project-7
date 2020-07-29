@@ -1,3 +1,4 @@
+//Poppin up alert if bell is clicked
 const popUp = document.getElementsByClassName("bell")[0];
 popUp.addEventListener("click", () => {
   const alertBox = document.getElementById("pop");
@@ -12,11 +13,14 @@ popUp.addEventListener("click", () => {
 })
 
 
+//Creating alert bar
 const alertBannar = document.getElementById("alert");
 alertBannar.innerHTML =
 `<strong>Alert </strong>This is an alert box.
 <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>`;
 
+
+//Creating each charts
 const trafficCanvas = document.getElementById("traffic-chart");
 let trafficData1 = {
   labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3",
@@ -66,7 +70,6 @@ let trafficData2 = {
     }]
   };  
 
-
   let trafficOptions = {
     aspectRatio: 2.5,
     animation: {
@@ -91,6 +94,7 @@ let trafficChart = new Chart(trafficCanvas, {
   options: trafficOptions
   });
 
+//Loading charts
 let trafficTerm = document.getElementsByClassName("time-wrap")[0];
 trafficTerm.addEventListener("click", (e) => {
  let selectedTerm = e.target.innerHTML;
@@ -119,8 +123,10 @@ trafficTerm.addEventListener("click", (e) => {
       options: trafficOptions
       });
  }
-})
+});
 
+
+//Creating daily-chart
 const dailyCanvas = document.getElementById("daily-chart");
 
 const dailyData = {
@@ -145,7 +151,7 @@ const dailyOptions = {
   legend : {
   display: false
   }
-}
+};
 
 let dailyChart = new Chart(dailyCanvas, {
   type: 'bar',
@@ -154,6 +160,7 @@ let dailyChart = new Chart(dailyCanvas, {
 });
 
 
+//Creating donut chart
 const mobileCanvas = document.getElementById("mobile-chart");
 const mobileData = {
     labels: ["Desktop", "Tablet", "Phones"],
@@ -177,7 +184,7 @@ const mobileOptions = {
       fontStyle: 'bold'
     }
   }
-}
+};
 
 let mobileChart = new Chart(mobileCanvas, {
   type: 'doughnut',
@@ -185,6 +192,8 @@ let mobileChart = new Chart(mobileCanvas, {
   options: mobileOptions
 });
 
+
+//Function of form
 const user = document.getElementById("userField");
 const message = document.getElementById("messageField");
 const send = document.getElementById("send");
@@ -202,26 +211,19 @@ send.addEventListener('click', () => {
   }
   });
 
-  //   creating datalist element
-  //   additon member name to the list 
-  //   get inputed value from input tag 
-  //   checking the value include member name 
-  //   if it is not included member name, delete from the screen 
-   
 
-  //Serch bar function of message user
-  let namesList = document.getElementById("names").getElementsByTagName("option");
-  // console.log(namesList[0].innerHTML.toLowerCase());
+//Serch bar function of message user
+let namesList = document.getElementById("names").getElementsByTagName("option");
 
-  user.addEventListener("keyup", (e)=> {
-    let userString = e.target.value;
-    userString.toLowerCase();
-    for (i = 0; i < namesList.length; i ++) {
-      if ( userString.includes(namesList[i].innerHTML.toLowerCase() === false)) {
-        namesList[i].style.display = "";
-      }
+user.addEventListener("keyup", (e)=> {
+  let userString = e.target.value;
+  userString.toLowerCase();
+  for (i = 0; i < namesList.length; i ++) {
+    if ( userString.includes(namesList[i].innerHTML.toLowerCase() === false)) {
+      namesList[i].style.display = "";
     }
-  })
+  }
+});
 
 //After page reloaded
 let onOff1 = localStorage.getItem("onOff1");
@@ -251,6 +253,7 @@ let switch2Input = switch2.getElementsByTagName("input")[0];
   switchNumber2 = switchNumber2 + 1 ;  
 })
 
+
 //Get text of choiced option
 let select= document.getElementById("select");
 let options = select.getElementsByTagName("option");
@@ -268,6 +271,7 @@ save.addEventListener("click", () => {
   localStorage.setItem("option",optionsValue);
 })
 
+
 //Clearing settings 
 let cancel =  document.getElementById("cancel");
 cancel.addEventListener("click", () => {
@@ -276,23 +280,24 @@ cancel.addEventListener("click", () => {
   localStorage.removeItem("option");
 })
 
-//Reflection of settings
-  if ( onOff1 %2 !== 0) {
-    switch1Input.setAttribute("checked", "false");
-  }else {
-    switch1Input.removeAttribute("checked");
-  }
 
-  if ( onOff2 %2 !== 0) {
-    switch2Input.setAttribute("checked", "false");
-  }else {
-    switch2Input.removeAttribute("checked");
-  }
+//Reflection of saved settings
+if ( onOff1 %2 !== 0) {
+  switch1Input.setAttribute("checked", "false");
+}else {
+  switch1Input.removeAttribute("checked");
+}
 
-  for (let i = 1; i < options.length; i++) {
-    if (options[i].value === option) {
-      options[i].setAttribute("selected", "selected");
-    }else {
-      options[i].removeAttribute("selected");
-    }
+if ( onOff2 %2 !== 0) {
+  switch2Input.setAttribute("checked", "false");
+}else {
+  switch2Input.removeAttribute("checked");
+}
+
+for (let i = 1; i < options.length; i++) {
+  if (options[i].value === option) {
+    options[i].setAttribute("selected", "selected");
+  }else {
+    options[i].removeAttribute("selected");
   }
+}
