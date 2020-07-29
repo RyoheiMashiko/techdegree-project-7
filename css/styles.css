@@ -85,10 +85,13 @@ header p {
   padding-right:0.5rem;
   margin: 2% 2%;
   border-right: 1px solid white;
+  transition: fill 0.5s ease-in-out;
+  fill: white;
 }
 
 .bell:hover {
   cursor: pointer;
+  fill:  orangered;
 }
 
 #pop {

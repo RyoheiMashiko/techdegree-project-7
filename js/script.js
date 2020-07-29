@@ -1,11 +1,13 @@
 const popUp = document.getElementsByClassName("bell")[0];
 popUp.addEventListener("click", () => {
-  console.log("test");
   const alertBox = document.getElementById("pop");
+  const pop = document.getElementById("iconNotification");
   if ( alertBox.style.display === "none") {
     alertBox.style.display = "block";
+    pop.style.display = "none";
   } else {
     alertBox.style.display = "none";
+    pop.style.display = "block";
   }
 })
 
