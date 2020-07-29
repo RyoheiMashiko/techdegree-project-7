@@ -112,7 +112,6 @@ header p {
   font-size: 0.3rem;
 }
 
-
 .notification {
   background-color: orange;
   width: 0.5rem;
@@ -131,7 +130,8 @@ header p {
   margin-right: 3%;
 }
 
-/* sidebar */
+
+/* sidebar style*/
 aside {
   grid-area: aside;
   background-color: rgb(20, 20, 90);
@@ -151,6 +151,8 @@ aside {
   margin: 2% 3% 2% 3%;
  }
 
+
+ /* nav style */
 .index-wrap {
   display: flex;
   align-items: center;
@@ -167,8 +169,6 @@ aside {
 }
 
 .input-wrap {
-  /* border-left: 1px solid navy;
-  border-bottom: 1px solid navy; */
   border-radius: 0 0 0 5px;
   width: 77%;
   height: 1.9rem;
@@ -210,8 +210,8 @@ aside {
   cursor: pointer;
 }
 
-/* main style */
 
+/* main style */
 main {
   grid-area: main;
   display: grid;
@@ -245,8 +245,8 @@ main {
   margin: 0.3rem auto 1rem auto;
 }
 
-/* traffic style */
 
+/* traffic style */
 .traffic-wrap {
   display: flex;
   align-items: center;
@@ -277,6 +277,7 @@ main {
  }
 
 
+ /* social-stats style */
 .social-wrap {
   display: flex;
   justify-content: space-between;
@@ -318,6 +319,7 @@ main {
 }
 
 
+/* new-members and recent-activity style */
 .member-container {
   display: flex;
   align-items: center;
@@ -378,6 +380,7 @@ main {
 }
 
 
+/* message-user style */
 form {
   display: flex;
   flex-direction: column;
@@ -414,6 +417,8 @@ input::-webkit-calendar-picker-indicator {
   border-radius: 3px;
 }
 
+
+/* settings style */
 .settings:first-of-type {
  margin-top: 10rem;
 }
@@ -467,7 +472,6 @@ input::-webkit-calendar-picker-indicator {
 select{
  -webkit-appearance: none;
  color: gray;
- /* font-size: 0.5rem; */
 }
 
 option{
@@ -489,7 +493,10 @@ option{
   border-radius: 3px;
 }
 
+
+/* over 768px */
 @media(min-width: 768px) {
+ /* general */
   h1 {
     font-size: 1.4rem;
   }
@@ -521,7 +528,8 @@ option{
   .recent-activity,
   .message-user,
   .settings {
-    border: lightgray solid 1px;
+    border-bottom: lightgray solid 1px;
+    border-right: lightgray solid 1px;
   }
 
   .traffic {
@@ -598,7 +606,7 @@ option{
 
   .social-container {
     width: 200px;
-    height: 6rem;
+    height: 5rem;
   }
 
   .bell {
@@ -630,7 +638,11 @@ option{
     font-size: 0.9rem;
     top:7px;
     }
-  }
+
+    .icon-size {
+      height: 55px;
+      width: 55px;
+    }
 
   .social-number {
     font-size: 1.8rem;
@@ -688,6 +700,8 @@ option{
     margin-bottom: 1rem;
   }
 
+
+  /* over 1024px */
 @media(min-width:1024px) {
   h1 {
     font-size: 1.8rem;
@@ -763,6 +777,11 @@ option{
     border: 1px solid lightgray;
   }
 
+  .icon-size {
+    height: 70px;
+    width: 70px;
+  }
+
   .social-media {
     margin-left: 0;
     font-size: 1rem;
@@ -771,5 +790,4 @@ option{
   .social-number {
     font-size: 2.8rem;
   }
-
 }
