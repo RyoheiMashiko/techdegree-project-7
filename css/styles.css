@@ -1,3 +1,4 @@
+/* General */
 * {
   margin: 0;
 }
@@ -25,6 +26,10 @@ p {
   font-size: 0.3rem;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .grid {
   display: grid;
   grid-template-columns: 100%;
@@ -36,12 +41,13 @@ p {
   "main";
 }
 
+
 /* header style */
 header {
   grid-area: header;
   display: flex;
   align-items: center;
-  background-color: rgb(253, 128, 10);
+  background-color: rgb(20, 20, 60);
   color: white;
   width: 100%;
 }
@@ -57,7 +63,6 @@ font-weight: bolder;
 
 .title-tm {
   font-size: 0.1rem;
-
 }
 
 .header-container {
@@ -82,33 +87,40 @@ header p {
   border-right: 1px solid white;
 }
 
+.bell:hover {
+  cursor: pointer;
+}
+
 #pop {
   display: none;
   max-width: 120px;
-  background-color: navy;
-  color: white;
+  background-color: white;
+  color: navy;
   position: absolute;  
-  top: 1rem;
-  left: 1.5rem;
-  padding:0.5rem 0.5rem 0.5rem 0.5rem;
+  top: 0rem;
+  left: 1.2rem;
+  padding:0.3rem 0.5rem 0.5rem 0.5rem;
   list-style: none;
   text-align: left;
+  border: 2px navy solid;
   border-radius: 5px;
+  z-index: 0;
 }
 
 #pop li {
-  border-bottom: white solid 1px;
+  border-bottom: navy solid 1px;
+  font-size: 0.3rem;
 }
 
 
 .notification {
-  background-color: red;
+  background-color: orange;
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
   position: absolute;
-  left: 1.2rem;
-  top: 0.5rem;
+  left: 1rem;
+  top: 0.3rem;
 }
 
 .mypic {
@@ -122,7 +134,7 @@ header p {
 /* sidebar */
 aside {
   grid-area: aside;
-  background-color: rgb(241, 169, 86);
+  background-color: rgb(20, 20, 90);
   text-align: center;
 }
 
@@ -155,28 +167,30 @@ aside {
 }
 
 .input-wrap {
-  border-left: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  /* border-left: 1px solid navy;
+  border-bottom: 1px solid navy; */
   border-radius: 0 0 0 5px;
   width: 77%;
   height: 1.9rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: whitesmoke;
+  background-color: rgb(230, 230, 255);
+  position: relative;
+  top: -1px;
 }
 
 .searchbox {
   margin-right: 0.5rem;
   height: 1rem;
   width: 60%;
-  border:solid 1px lightgrey;
+  border:solid 1px whitesmoke;
   border-radius: 3px;
   font-size: 0.5rem;
 }
 
 #alert {
-  background-color: navy;
+  background-color: rgb(20, 20, 100);
   color: white;
   margin: 0.5rem 0.5rem 0.5rem 0.5rem ;
   height: 30px;
@@ -190,6 +204,10 @@ aside {
   position: absolute;
   right: 1rem;
   font-weight: bold;
+}
+
+.close-btn:hover {
+  cursor: pointer;
 }
 
 /* main style */
@@ -246,13 +264,16 @@ main {
 .time-wrap p {
   text-align: center;
   width: 40%;
+  border-radius: 10%/50%;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .time-wrap p:hover {
-  background-color: navy;
+  background-color: rgb(20, 20, 100);
   border-radius: 10%/50%;
   text-align: center;
   color: white;
+  cursor: pointer;
  }
 
 
@@ -266,17 +287,17 @@ main {
 }
 
 .social-container {
-  width: 70%;
+  width: 220px;
   display: flex;
   align-items: center;
   border-radius: 5px;
-  background-color: white;
+  background-color: whitesmoke;
   border: darkgray 1px solid;
 
 }
 
 .icon-size {
-  background-color: orange;
+  background-color: rgb(20, 20, 90);
   border-radius: 50%;
   fill: white;
   width: 50px;
@@ -288,19 +309,14 @@ main {
   position: relative;
   top:5px;
   font-size: 0.8rem;
-  color: orange;
+  color: rgb(20, 20, 90);
 }
 
 .social-number {
   font-size: 1.8rem;
+  color: orange;
 }
 
-.new-members {
-  /* grid-area: new-members; */
-}
-.recent-activity {
-  /* grid-area: recent-activity; */
-}
 
 .member-container {
   display: flex;
@@ -392,7 +408,7 @@ input::-webkit-calendar-picker-indicator {
 
 .message-button {
   height:2rem;
-  background-color: navy;
+  background-color: rgb(20, 20, 90);
   border: none;
   color: white;
   border-radius: 3px;
@@ -407,6 +423,11 @@ input::-webkit-calendar-picker-indicator {
   margin: auto;
   align-items: center;
   width: 90%;
+}
+
+.switch1,
+.switch2:hover {
+  cursor: pointer;
 }
 
 .switch2 {
@@ -462,7 +483,7 @@ option{
 .setting-button button {
   height:2rem;
   width: 45%;
-  background-color:rgb(16, 10, 107);
+  background-color:rgb(20, 20, 90);
   border: none;
   color: white;
   border-radius: 3px;
@@ -503,6 +524,9 @@ option{
     border: lightgray solid 1px;
   }
 
+  .traffic {
+    border-top: none;
+  }
   
   .traffic,
   .social-stats {
@@ -573,14 +597,32 @@ option{
   }
 
   .social-container {
-    width: 250px;
+    width: 200px;
     height: 6rem;
   }
 
-  .icon-size {
-    width: 70px;
-    height: 70px;
-    margin: 0.5rem 1rem 0.5rem 1rem;
+  .bell {
+    width: 4rem;
+    height: 2rem;
+  }
+
+  .notification {
+    width: 0.8rem;
+    height: 0.8rem;
+    left: 1.8rem;
+    top: 0;
+  }
+
+  #pop {
+    left: 2.3rem;
+    top: -0.3rem;
+  }
+
+  .mypic {
+    width:2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem ;
   }
 
   .social-media {
@@ -664,18 +706,32 @@ option{
   }
 
   .bell {
-    width: 3.3rem;
-    height: 2.9rem;
-}
+    width: 4rem;
+    height: 2rem;
+  }
+
+  .mypic {
+    width:2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem ;
+  }
 
   .notification {
-    width: 0.7rem;
-    height: 0.7rem;
+    width: 1rem;
+    height: 1rem;
+    left: 1.8rem;
+    top: 0;
   }
 
   #pop {
     max-width: 120px;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    top: -10px;
+  }
+
+  #pop li {
+    font-size: 0.7rem;
   }
 
   .input-wrap {

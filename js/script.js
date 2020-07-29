@@ -22,7 +22,7 @@ let trafficData1 = {
   datasets: [{
     data: [7, 12, 10, 20, 15, 17, 12, 18, 22, 15,
     25],
-    backgroundColor: "rgb(255,165,0, .6)",
+    backgroundColor: "rgb(20,20,110, .5)",
     borderWidth: 1,
     borderColor:"rgb(255,165,0, .1)",
   }]
@@ -34,7 +34,7 @@ let trafficData2 = {
   datasets: [{
     data: [130, 158, 240, 480, 390,470, 430, 320, 400, 400,
     600],
-    backgroundColor: "rgb(255,165,0, .6)",
+    backgroundColor: "rgb(20,20,110, .5)",
     borderWidth: 1,
     borderColor:"rgb(255,165,0, .1)",
   }]
@@ -46,7 +46,7 @@ let trafficData2 = {
     datasets: [{
       data: [700, 750, 700, 1200, 1300, 1750, 950, 1350, 950, 1500,
       1300],
-      backgroundColor: "rgb(255,165,0, .6)",
+      backgroundColor: "rgb(20,20,110, .5)",
       borderWidth: 1,
       borderColor:"rgb(255,165,0, .1)",
     }]
@@ -58,7 +58,7 @@ let trafficData2 = {
     datasets: [{
       data: [3500, 4400, 2500, 5000, 4800, 6100, 3500, 5000, 4200, 6500,
       5200],
-      backgroundColor: "rgb(255,165,0, .6)",
+      backgroundColor: "rgb(20,20,110, .5)",
       borderWidth: 1,
       borderColor:"rgb(255,165,0, .1)",
     }]
@@ -126,7 +126,7 @@ const dailyData = {
   datasets: [{
     label: '# of Hits',
     data: [75, 115, 175, 125, 225, 200, 100],
-    backgroundColor: "rgb(255,165,0, .6)",
+    backgroundColor: "rgb(20,20,110, .5)",
     borderWidth: 1
   }]
   };
@@ -160,9 +160,9 @@ const mobileData = {
       data: [2000, 550, 500],
       borderWidth: 0,
       backgroundColor: [
-      "rgb(255,165,0, .8)",
-      "rgb(66,133,244, .8)",
-      "rgb(200,200,200, .8)"
+      "rgb(20,20,50)",
+      "rgb(20,20,180)",
+      "rgb(200,200,200)"
       ]
     }]
   };
