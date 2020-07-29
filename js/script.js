@@ -221,12 +221,22 @@ send.addEventListener('click', () => {
     }
   })
 
+//After page reloaded
+let onOff1 = localStorage.getItem("onOff1");
+let switchNumber1 =Number(onOff1);
+
+let onOff2 = localStorage.getItem("onOff2");
+let switchNumber2 =Number(onOff2);
+
+let option = localStorage.getItem("option");
+let optionsValue = option;
+
+
 //Creating a value of on/off of toggle switch
 let switch1 = document.getElementsByClassName("switch1")[0];
 let switch1Area = switch1.getElementsByTagName("span")[0];
 let switch1Input = switch1.getElementsByTagName("input")[0];
 
-let switchNumber1 = 0;
 switch1Area.addEventListener("click", () => {
   switchNumber1 = switchNumber1 + 1 ;  
 })
@@ -235,19 +245,18 @@ let switch2 = document.getElementsByClassName("switch2")[0];
 let switch2Area = switch2.getElementsByTagName("span")[0];
 let switch2Input = switch2.getElementsByTagName("input")[0];
 
-let switchNumber2 = 0;
-switch2Area.addEventListener("click", () => {
+  switch2Area.addEventListener("click", () => {
   switchNumber2 = switchNumber2 + 1 ;  
 })
 
 //Get text of choiced option
 let select= document.getElementById("select");
 let options = select.getElementsByTagName("option");
-let optionsValue = "";
 
 select.addEventListener("change", (e) => {
-optionsValue = e.target.value;
+  optionsValue = e.target.value;
 })
+
 
 //Saving settings
 let save = document.getElementById("save");
@@ -263,29 +272,25 @@ cancel.addEventListener("click", () => {
   localStorage.removeItem("onOff1");
   localStorage.removeItem("onOff2");
   localStorage.removeItem("option");
-
-  onOff1 = localStorage.getItem("onOff1");
-  onOff2 = localStorage.getItem("onOff2");
-  option = localStorage.getItem("option");
 })
 
-//Getting value from local storage
-  let onOff1 = localStorage.getItem("onOff1");
-  let onOff2 = localStorage.getItem("onOff2");
-  let option = localStorage.getItem("option");
-
 //Reflection of settings
-  if ( onOff1 %2 === 0 && onOff1 === null) {
-    switch1Input.removeAttribute("checked");
-  }else {
+  if ( onOff1 %2 !== 0) {
     switch1Input.setAttribute("checked", "false");
+  }else {
+    switch1Input.removeAttribute("checked");
   }
 
-  if ( onOff2 %2 === 0 && onOff2 === null) {
-    switch1Input.removeAttribute("checked");
+  if ( onOff2 %2 !== 0) {
+    switch2Input.setAttribute("checked", "false");
   }else {
-    switch1Input.setAttribute("checked", "false");
+    switch2Input.removeAttribute("checked");
   }
 
-  let selectedOption = document.querySelector("option[value=option]");
-  console.log(selectedOption);
+  for (let i = 1; i < options.length; i++) {
+    if (options[i].value === option) {
+      options[i].setAttribute("selected", "selected");
+    }else {
+      options[i].removeAttribute("selected");
+    }
+  }
