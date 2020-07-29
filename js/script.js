@@ -297,8 +297,6 @@ if ( onOff2 %2 !== 0) {
 
 for (let i = 1; i < options.length; i++) {
   if (options[i].value === option) {
-    options[i].setAttribute("selected", true);
-  }else {
-    options[i].removeAttribute("selected");
+    select.selectedIndex = i;
   }
 }
